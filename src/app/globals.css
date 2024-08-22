@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.react-calendar{
+    font:"Inter" !important;
+    border: none !important;
+}

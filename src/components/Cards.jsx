@@ -3,27 +3,22 @@ import React from 'react'
 
 const Cards = ({type}) => {
   return (
-    <div>
 
-      <div className=' rounded-lg w-40 h-40 bg-yellow-200 p-3'>
-          <div className='flex  justify-between'>
-          <div >
-            <span className='bg-white ' >2024/14</span>
-            </div>
-         <div>
-         <Image src={'/more.png'}
-        width={14}
-        height={14}/>
+      <div className=' rounded-2xl odd:bg-abukiPurple even:bg-abukiYellow p-3 flex-1 min-w-[130px]'>
+         <div className='flex justify-between  items-center'>
+            <span className='bg-white px-2 py-1 rounded-lg text-green-300 '>2024/14</span>
+            <Image
+            
+            src={'/more.png'}
+            alt=''
+            width={20}
+            height={20}/>
          </div>
-          </div>
-          <div className='py-5 flex flex-col gap-5'>
-          <span >6453</span>
-          <span >{type}</span>
-          </div>
-          
-      </div>
+          <span className='text-2xl font-semibold my-4 inline-block'>6345</span>
+          <h3 className='capitalize text-sm font-medium text-gray-500'>{type}</h3>
+         </div>
      
-    </div>
+    
   )
 }
 
