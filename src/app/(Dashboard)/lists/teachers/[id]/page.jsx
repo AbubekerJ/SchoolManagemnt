@@ -1,8 +1,11 @@
 
+
+
 import { subjectsData, teachersData } from "@/lib/data"
 import Image from "next/image"
 import BigCalander from "@/components/BigCalander"
 import Announcement from "@/components/Announcement"
+import FormModal from "@/components/FormModal"
 
 
 const page = ({params}) => {
@@ -24,6 +27,7 @@ const page = ({params}) => {
               src={teacher.photo}  width={150} height={150}/>
               <div className="flex flex-wrap gap-3">
                   < h1>{teacher.name}</h1>
+                  <Image className="w-4 h-4 " src={'/edit.png '} width={14} height={14} />
                   <h1 className="text-gray-400 text-xs ">leaorm ipsum dscription leaorm ipsum dscription </h1>
                   <div className=" flex gap-7 flex-wrap">
                      <div className="flex flex-col gap-3">

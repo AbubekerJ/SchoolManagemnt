@@ -84,9 +84,7 @@ const page = () => {
         <Image src={'/sort.png'} width={14}height={14}/>
         </button>
         {role==='admin'&&(
-           <button className='w-8 h-8 flex items-center justify-center rounded-full bg-abukiYellow'>
-           <Image src={'/plus.png'} width={14}height={14}/>
-           </button>
+          <FormModal type={'create'} table={'student'}/>
         )}
       </div>
       </div>
